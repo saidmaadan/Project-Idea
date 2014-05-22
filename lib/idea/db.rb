@@ -46,7 +46,7 @@ class IDEA::DB
   def create_post(data)
     @post_count += 1
     data[:id] = @post_count
-    data = @posts[data[:id]]
+    @posts[ @post_count ] = data
     build_post(data)
   end
 

@@ -15,14 +15,14 @@ module IDEA
     end
   end
 
-  class Command < OpenStruct
-    def success?
-      false
-    end
-    def error?
-      true
-    end
-  end
+  # class Command < OpenStruct
+  #   def success?
+  #     false
+  #   end
+  #   def error?
+  #     true
+  #   end
+  # end
 
   class CommandSuccess < OpenStruct
     def success?

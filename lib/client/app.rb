@@ -3,6 +3,8 @@ require 'sinatra'
 require 'pry'
 require '../idea.rb'
 
+enable :sessions
+
 set :bind, '0.0.0.0'
 
 get '/' do
