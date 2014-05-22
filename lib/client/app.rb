@@ -12,7 +12,7 @@ get '/' do
 end
 
 get '/signup' do
-  # erb :signup
+  erb :signup
 end
 
 post '/signup' do
