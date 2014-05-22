@@ -36,19 +36,64 @@ class IDEA::DB
   end
 
   def list_users
-    list = []
+    list_user = []
     @users.each do |id, data|
-      list << build_user(data)
+      list_user << build_user(data)
     end
-    list
+    list_user
   end
 
   def create_post(data)
     @post_count += 1
     data[:id] = @post_count
-    data = @post[data[:id]]
+    data = @posts[data[:id]]
     build_post(data)
   end
+
+  def get_post(id)
+    data = @posts[id]
+    build_post(data)
+  end
+
+  def update_post(id, data)
+    @posts[id].merge!(data)
+    build_post(@posts[id])
+  end
+
+  def destroy_post(id)
+    @posts.delete(id)
+  end
+
+  def list_post
+    list_post = []
+    @posts.each do |id, data|
+      list_post << build_post(data)
+    end
+    list_post
+  end
+
+  def create_category(data)
+    @category_count += 1
+    data[:id] = @category_count
+    data = @categories[data[:id]]
+    build_category(data)
+  end
+
+  def get_category(id)
+    data = @categories[id]
+    build_category(data)
+  end
+
+  def update_category(id, data)
+    @categories[id].merge!(data)
+    build_category(@categories[id])
+  end
+
+  def destroy_category(id)
+    @categories.delete(id)
+  end
+
+
 
   def build_user(data)
     IDEA::User.new(data)
