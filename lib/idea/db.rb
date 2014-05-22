@@ -50,8 +50,6 @@ class IDEA::DB
     build_post(data)
   end
 
-  def
-
 
   def build_user(data)
     IDEA::User.new(data)
