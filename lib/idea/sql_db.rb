@@ -40,12 +40,34 @@ class IDEA::SQLDB
     IDEA::User.new(data)
   end
 
+  def build_post(data)
+    IDEA::Post.new(data)
+  end
+
   def create_user(data)
     @db.execute <<-SQL
-    INSERT INTO user
+    INSERT INTO user(username, password)
+    VALUES("#{data[:username]}, #{data[:password]}")
     SQL
 
+    result = @db.execute <<-SQL
+    SELECT * FROM user where id = last_insert_rowid();
+    SQL
+    build_user(result.first)
+
   end
+
+  def create_post(data)
+    @db.execute <<-SQL
+    INSERT INTO post(title, description)
+    VALUES("#{data[:title]}, #{data[:description]");
+    SQL
+
+    result = @db.execute <<-SQL
+    SELECT * FROM post where id = last_insert_rowid();
+    SQL
+    build_post(result.all)
+
 
 
 end

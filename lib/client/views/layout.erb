@@ -1,21 +1,47 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Ideas</title>
-  <!-- <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.1.1/css/foundation.css"> -->
-  <style>
-/*  html {background-color: #28b4e5;}
-  body {background-color: #28b4e5; text-align: center; margin-top: 75px; background: no-repeat center center fixed;}
-  form {margin: 0 auto; text-align: center; width: 70%;}
-  input {border-radius: 4px;}
-  h1, h4 {color: white;}
-  h2 {color:#c73400;}*/
-  </style>
-</head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Idea</title>
+    <meta name="description" content="A simple Project Ideas App">
+    <meta name="author" content="Greg Cosgrove and Said Maadan">
 
-<body>
-  <div>
-  <%= yield %>
-  </div>
-</body>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      body {
+      background-image:url('../public/img/hixs_pattern_evolution_@2X.png');
+      padding-top: 60px;
+      }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role = "navigation">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="navbar-brand" href="#">Idea Post</a>
+          <ul class = "nav nav">
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <h1><%= @title %></h1>
+      <%= yield %>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+  </body>
 </html>
