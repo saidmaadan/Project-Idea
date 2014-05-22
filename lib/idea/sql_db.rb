@@ -42,6 +42,10 @@ class IDEA::SQLDB
 
   def create_user(data)
     @db.execute <<-SQL
-    INSERT INTO post
+    INSERT INTO user
+    SQL
 
   end
+
+
+end
