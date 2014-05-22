@@ -60,14 +60,14 @@ class IDEA::SQLDB
   def create_post(data)
     @db.execute <<-SQL
     INSERT INTO post(title, description)
-    VALUES("#{data[:title]}, #{data[:description]");
+    VALUES("#{data[:title]}, #{data[:description]}");
     SQL
 
     result = @db.execute <<-SQL
     SELECT * FROM post where id = last_insert_rowid();
     SQL
     build_post(result.all)
-
+  end
 
 
 end
