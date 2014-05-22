@@ -12,7 +12,7 @@ class IDEA::DB
   end
 
   def create_user(data)
-    data[:id ||= @user_count +1
+    data[:id] ||= @user_count +1
     return nil if @users[data[:id]]
     @user_count += 1
     @users[data[:id]] = data
@@ -50,7 +50,6 @@ class IDEA::DB
     build_post(data)
   end
 
-  def
 
 
   def build_user(data)
