@@ -19,6 +19,17 @@ article {
   text-decoration: none;
 }
 
+.post-text-large {
+  font-size: 300%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.post-arrange {
+  text-align: left;
+  padding-top: 3%;
+}
 
 .food {
   background: url('../img/food.png');
@@ -40,8 +51,43 @@ article {
   background: url('../img/old_map.png');
 }
 
+.nice-snow {
+  background: url('../img/nice_snow_@2X.png');
+}
+
 #browse-background {
   width: 100%;
   margin: 0 auto;
-  background: url('../img/nice_snow_@2X.png');
 }
+
+#form-container {
+  height: 110%;
+}
+
+#form-title {
+  margin-top: 3%;
+  margin-left: 5%;
+  width: 90%;
+  height: 100px;
+}
+
+#form-post {
+  margin-left: 5%;
+  width: 90%;
+  height: 300px;
+}
+
+#form-share {
+  margin-left: 5%;
+  width: 90%;
+  height: 100px;
+}
+
+ textarea, input, select{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  width:  100%;
+}
+
