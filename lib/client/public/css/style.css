@@ -1,0 +1,39 @@
+#header{
+  background: #005500;
+}
+
+.form{
+  width: 40%;
+  margin: auto;
+}
+#post{
+  margin: 50px auto;
+  text-align: center;
+}
+
+#post-idea{
+  padding: 20px 30px;
+  font-size: 2em;
+  margin: 0 auto;
+}
+
+#post-idea a{
+  color: white;
+  text-decoration: none;
+}
+
+.get{
+  text-align: center;
+}
+.get h3{
+  font-size: 1.5em;
+  color: green;
+}
+.logo{
+  margin: 0 auto;
+  font-size: 6em;
+  color: #005500;
+  text-align: center;
+
+
+
