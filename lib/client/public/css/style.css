@@ -1,0 +1,25 @@
+.post-it {
+  height: 175px;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.food {
+  background: url('../img/food.png');
+}
+
+.lined-paper {
+  background: url('../img/lined_paper.png');
+}
+
+.giftly {
+  background: url('../img/giftly.png');
+}
+
+.squared-metal {
+  background: url('../img/squared_metal_@2x.png');
+}
+
+.old-map {
+  background: url('../img/old_map.png');
+}

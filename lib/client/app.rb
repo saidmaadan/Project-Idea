@@ -19,5 +19,8 @@ post '/signup' do
   # puts params
   # @name = RPS::CreateNewUser.new.run(params[:name])
   # erb :signup
+end
 
+get '/browse' do
+  erb :browse
 end
