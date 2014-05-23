@@ -1,0 +1,47 @@
+article {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-left: 12%;
+}
+
+.post-it {
+  height: 175px;
+  margin: 5px;
+  border: 2px solid black;
+}
+
+.browse-text {
+  font-size: 65%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+
+.food {
+  background: url('../img/food.png');
+}
+
+.lined-paper {
+  background: url('../img/lined_paper.png');
+}
+
+.giftly {
+  background: url('../img/giftly.png');
+}
+
+.squared-metal {
+  background: url('../img/squared_metal_@2x.png');
+}
+
+.old-map {
+  background: url('../img/old_map.png');
+}
+
+#browse-background {
+  width: 100%;
+  margin: 0 auto;
+  background: url('../img/nice_snow_@2X.png');
+}
