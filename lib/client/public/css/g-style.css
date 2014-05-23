@@ -8,7 +8,7 @@ article {
 .post-it {
   height: 175px;
   margin: 5px;
-  border: 2px solid black;
+  border-radius: 0.7%;
 }
 
 .browse-text {
@@ -20,7 +20,7 @@ article {
 }
 
 .post-text-large {
-  font-size: 300%;
+  font-size: 200%;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   text-decoration: none;
@@ -61,26 +61,26 @@ article {
 }
 
 #form-container {
-  height: 110%;
+  height: 100%;
 }
 
 #form-title {
   margin-top: 3%;
   margin-left: 5%;
   width: 90%;
-  height: 100px;
+  height: 100%;
 }
 
 #form-post {
   margin-left: 5%;
   width: 90%;
-  height: 300px;
+  height: 100%;
 }
 
 #form-share {
   margin-left: 5%;
   width: 90%;
-  height: 100px;
+  height: 100%;
 }
 
  textarea, input, select{
