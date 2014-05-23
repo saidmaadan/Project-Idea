@@ -18,6 +18,7 @@ end
 get '/signin' do
   erb :signin
 end
+
 post '/signup' do
   # puts params
   # @name = RPS::CreateNewUser.new.run(params[:name])
@@ -30,4 +31,8 @@ end
 
 get '/new' do
   erb :new
+end
+
+get '/post' do
+  erb :post
 end
