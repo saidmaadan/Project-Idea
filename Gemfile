@@ -6,3 +6,5 @@ gem 'pry-debugger', '~> 0.2.2'
 gem 'sqlite3'
 gem 'sinatra'
 gem 'shotgun'
+gem 'omniauth-twitter', :github => 'arunagw/omniauth-twitter'
+
