@@ -7,4 +7,3 @@ gem 'sqlite3'
 gem 'sinatra'
 gem 'shotgun'
 gem 'omniauth-twitter', :github => 'arunagw/omniauth-twitter'
-
