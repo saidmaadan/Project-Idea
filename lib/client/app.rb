@@ -26,6 +26,8 @@ post '/signup' do
 end
 
 get '/browse' do
+  # get the 12 latest posts
+  @posts = Post.all(:order => [ :id.desc ], :limit => 12)
   erb :browse
 end
 
