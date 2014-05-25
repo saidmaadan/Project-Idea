@@ -1,6 +1,14 @@
-<div class = "logo"><span class="glyphicon glyphicon-map-marker"></span></div>
-<div class = "get"><h3>Get Involved | Get Inspired</h3></div>
-<div id = "post">
- <span id = "post-idea" class="label label-success"><a href = "/post">Post Your Idea</a></span>
- <span id = "post-idea" class="label label-info"><a href = "/browse">Get Inspired</a></span>
+
+<div class = "logo"><span class="glyphicon glyphicon-map-marker"></span>
+<h1> <%= "Welcome, #{session[:username]}!" %></h1>
 </div>
+
+<!-- <div class = "get"><h3>Get Involved | Get Inspired</h3></div> -->
+<div id = "post">
+
+ <span id = "post-idea" class="label label-success"><a href = "/post">Post Your Idea</a></span>
+
+ <span id = "get-idea" class="label label-info"><a href = "/browse">Get Inspired</a></span>
+</div>
+<div id = "post">
+<span id = "sign-idea" class="label label-warning"><a href = "/signout">Sign-Out</a></span></div>

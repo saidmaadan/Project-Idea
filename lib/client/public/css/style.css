@@ -7,8 +7,14 @@
   width: 40%;
   margin: auto;
 }
+
+#post1{
+  margin: 0 auto;
+  text-align: center;
+}
+
 #post{
-  margin: 50px auto;
+  margin: 60px auto;
   text-align: center;
 }
 
@@ -22,13 +28,33 @@
   color: white;
   text-decoration: none;
 }
+#get-idea{
+  padding: 20px 30px;
+  font-size: 2em;
+  margin: 0 auto;
+}
 
+#get-idea a{
+  color: white;
+  text-decoration: none;
+}
+
+#sign-idea{
+  padding: 20px 30px;
+  font-size: 2em;
+  margin: 0 auto;
+}
+
+#sign-idea a{
+  color: white;
+  text-decoration: none;
+}
 .get{
   text-align: center;
 }
 .get h3{
-  font-size: 1.5em;
-  color: green;
+  font-size: 2em;
+  color: #D3E0DE;
 }
 .logo{
   margin: 0 auto;
@@ -36,3 +62,33 @@
   color: #005500;
   text-align: center;
 }
+.logo h1{
+  color: #CC1622;
+}
+
+#snet{
+  float: right;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  /*text-align: center;*/
+}
+
+/*@media only screen and (max-device-width: 480px) {
+    #post-idea {
+      width: 100%;
+      margin: 0 auto;
+
+  }
+  #get-idea {
+      width: 100%;
+      margin: 0 auto;
+
+  }
+  #sign-idea {
+      width: 100%;
+      margin: 0 auto;
+
+  }
+}
+
+*/
