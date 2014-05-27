@@ -7,3 +7,7 @@ gem 'sqlite3'
 gem 'sinatra'
 gem 'shotgun'
 gem 'omniauth-twitter', :github => 'arunagw/omniauth-twitter'
+gem 'data_mapper'
+gem 'dm-sqlite-adapter'
+gem "dm-core"
+gem "dm-migrations"

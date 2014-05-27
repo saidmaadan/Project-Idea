@@ -1,0 +1,15 @@
+<% if @post %>
+  <form action="/<%= @post.id %>" method="post" id="edit">
+    <input type="hidden" name="_method" value="put">
+    <textarea name="title"><%=h @post.title %></textarea>
+
+    <textarea name="description"><%=h @post.description %></textarea>
+    <textarea name="category"><%=h @post.category %></textarea>
+
+
+    <input type="submit">
+  </form>
+  <p><a href="/<%= @post.id %>/delete">Delete</a></p>
+<% else %>
+  <p>Post not found.</p>
+<% end %>

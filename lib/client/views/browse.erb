@@ -1,9 +1,29 @@
 
-<body id="browse-background">
-  <article>
-    <div style="padding:0 15px;"><!-- offset row negative padding -->
 
-      <div class="row browse-text">
+<div class ="browse-file">
+<% @posts.each do |post| %>
+     <h3> <%= post.title %></h3>
+    <span class="pull-right"><a href="/browse/#{@post.id}/edit" class="btn btn-warning">EDIT</a>  <a href="/browse/#{@post.id}" class="btn btn-danger">Delete</a></span>
+      <%= post.description %>
+     <p> Category: <%= post.category %></p>
+      <!-- <span><a href="/<%= post.id %>">[edit]</a></span>
+    </p> -->
+
+    <p class="meta">Created: <%= post.created_at %></p>
+
+
+<% end %>
+</div>
+
+
+
+<!-- <body id="browse-background">
+  <article> -->
+
+
+   <!--  <div style="padding:0 15px;"><! offset row negative padding -->
+
+      <!-- <div class="row browse-text">
         <div class="col-md-3 post-it giftly">
           <a class="fancybox" href="#inline1" title="Lorem ipsum"><h3>Create a board for web apps where people can go to get inspired</h3></a>
           <div id="inline1" style="width:400px;display: none;">
@@ -63,7 +83,7 @@
         <div class="col-md-3 post-it giftly" >
           <h4>An Idea</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, recusandae eos eveniet temporibus quisquam iste voluptatem. Inventore, quas, corrupti veritatis quod quisquam modi id omnis esse reiciendis culpa voluptatem consectetur.
-          </p></div>
+          </p></div> -->
       <!-- <div class="row">
         <div class="col-md-3 post-it old-map">
           <h4>An Idea</h4>
@@ -81,6 +101,7 @@
           </p>
         </div>
       </div> -->
-    </div>
-  </article>
-</body>
+    <!-- </div> -->
+
+ <!--  </article>
+</body> -->
