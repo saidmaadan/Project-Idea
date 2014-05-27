@@ -124,7 +124,10 @@ end
 post '/browse' do
    protected
    @post = Post.create(:title => params[:title], :description => params[:description], :category => params[:category], :created_at => Time.now)
-   # post = Post.new(
+    # @post.save
+    redirect '/browse'
+
+# post = Post.new(
    #  :title => params[:title],
    #  :description => params[:description],
    #  :category => params[:category],
@@ -133,11 +136,6 @@ post '/browse' do
    #  )
     # if @post.save
     # end
-    @post.save
-
-    redirect '/browse'
-
-
   #redirect to("/#{@post.id}")
 #    @post = Post.create(
 #   :title      => "My first DataMapper post",
