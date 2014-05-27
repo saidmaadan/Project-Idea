@@ -110,6 +110,10 @@ get '/private' do
   halt(401,'Not Authorized') unless admin?
 end
 
+# get '/browse' do
+#   # get the 12 latest posts
+#   @posts = Post.all(:order => [ :id.desc ], :limit => 12)
+#   erb :browse
 get '/browse' do
    protected
    @posts = Post.all
