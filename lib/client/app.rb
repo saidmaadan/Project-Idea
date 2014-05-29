@@ -47,6 +47,7 @@ class PostController < Sinatra::Base
 
   helpers PostHelpers
 end
+
   use OmniAuth::Builder do
   provider :twitter, '82hJ55dxqop9rCtVvMtUGthPv', 'a0nK7yyjBUMwBOlerbnBQQkD3FMC9J2RU9xVROBN1Z2QmRHNnZ'
   {
@@ -69,10 +70,7 @@ helpers do
     redirect '/'
   end
 end
-# alias_method :h, :escape_html
 end
-
-
 
 
 get '/' do
@@ -101,19 +99,13 @@ get '/signout' do
 end
 
 post '/signup' do
-  # puts params
-  # @name = RPS::CreateNewUser.new.run(params[:name])
-  # erb :signup
+
 end
 
 get '/private' do
   halt(401,'Not Authorized') unless admin?
 end
 
-# get '/browse' do
-#   # get the 12 latest posts
-#   @posts = Post.all(:order => [ :id.desc ], :limit => 12)
-#   erb :browse
 get '/browse' do
    protected
    @posts = Post.all
@@ -124,27 +116,7 @@ end
 post '/browse' do
    protected
    @post = Post.create(:title => params[:title], :description => params[:description], :category => params[:category], :created_at => Time.now)
-    # @post.save
     redirect '/browse'
-
-# post = Post.new(
-   #  :title => params[:title],
-   #  :description => params[:description],
-   #  :category => params[:category],
-   #  :created_at => Time.now
-   #  #:updated_at => Time.now
-   #  )
-    # if @post.save
-    # end
-  #redirect to("/#{@post.id}")
-#    @post = Post.create(
-#   :title      => "My first DataMapper post",
-#   :description       => "A lot of text ...",
-#   :category => "web App",
-#   :created_at => Time.now
-# )
-#    @post.save
-#    redirect '/browse'
 end
 
 get '/new' do
@@ -170,12 +142,12 @@ get '/:id/edit' do
 end
 
 put '/:id' do
-    protected!
-    post = Post.get(params[:id])
-    if post.update(params[:post])
-     puts "Post successfully updated"
-    end
-    redirect to("/#{post.id}")
+  protected!
+  post = Post.get(params[:id])
+  if post.update(params[:post])
+   puts "Post successfully updated"
+  end
+  redirect to("/#{post.id}")
   end
 
   delete '/:id' do
