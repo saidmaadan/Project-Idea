@@ -49,7 +49,7 @@ class PostController < Sinatra::Base
 end
 
   use OmniAuth::Builder do
-  provider :twitter, '82hJ55dxqop9rCtVvMtUGthPv', 'a0nK7yyjBUMwBOlerbnBQQkD3FMC9J2RU9xVROBN1Z2QmRHNnZ'
+  provider :twitter, 'API Key', 'API secret'
   {
       :secure_image_url => 'true',
       :image_size => 'original',
